@@ -1,0 +1,33 @@
+{
+  "name": "Arnab Kumar Roy - AI/ML Software Engineer Portfolio",
+  "short_name": "AKR Portfolio",
+  "description": "Portfolio showcasing AI/ML software engineering projects, skills, and experience",
+  "start_url": "/devakroy.github.io/",
+  "scope": "/devakroy.github.io/",
+  "display": "standalone",
+  "theme_color": "#00d4ff",
+  "background_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/profile/profilepic.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "images/profile/profilepic.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "images/profile/profilepic.jpeg",
+      "sizes": "540x720",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    }
+  ]
+}

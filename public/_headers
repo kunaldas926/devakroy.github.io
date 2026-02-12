@@ -1,0 +1,29 @@
+/*
+  # Security Headers
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https:; connect-src 'self' https://api.github.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+
+/* Cache static assets */
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/* Cache service worker */
+/service-worker.js
+  Cache-Control: public, max-age=3600
+
+/* Cache manifest */
+/manifest.json
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/* HTML - no caching */
+/*.html
+  Cache-Control: no-cache, must-revalidate
+
+/* Default */
+/*
+  Cache-Control: public, max-age=3600
